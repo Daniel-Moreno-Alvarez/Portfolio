@@ -1,0 +1,211 @@
+/* =========================================================
+   SKILLS
+========================================================= */
+
+.skills-carousel{
+  width:100%;
+  overflow:hidden;
+  padding:60px 0;
+  position:relative;
+  background-color:#070707;
+}
+
+/* FADE LATERALES */
+
+.skills-carousel::before,
+.skills-carousel::after{
+  content:"";
+  position:absolute;
+  top:0;
+
+  width:100px;
+  height:100%;
+
+  z-index:10;
+
+  pointer-events:none;
+}
+
+.skills-carousel::before{
+  left:0;
+
+  background:
+    linear-gradient(
+      to right,
+      #070707 20%,
+      rgba(10,10,10,0)
+    );
+}
+
+.skills-carousel::after{
+  right:0;
+
+  background:
+    linear-gradient(
+      to left,
+      #070707 20%,
+      rgba(10,10,10,0)
+    );
+}
+
+/* TRACK */
+
+.skills-track{
+  display:flex;
+  gap:40px;
+
+  width:max-content;
+
+  will-change:transform;
+
+  cursor:grab;
+}
+
+.skills-track:active{
+  cursor:grabbing;
+}
+
+/* ITEMS */
+
+.skill-item,
+.pacman-item{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+
+  user-select:none;
+  -webkit-user-drag:none;
+
+  width:110px;
+
+  flex:0 0 auto;
+
+  transition:
+    transform 0.2s ease-out,
+    filter 0.2s ease-out,
+    opacity 0.2s ease-out;
+
+  will-change:transform, filter;
+}
+
+.skill-item{
+  pointer-events:none;
+}
+
+.pacman-item{
+  cursor:pointer;
+}
+
+/* ICONOS */
+
+.skill-item img,
+.pacman-item img{
+  width:70px;
+  height:70px;
+
+  object-fit:contain;
+}
+
+.pacman-item img{
+  -webkit-user-drag:none;
+  user-select:none;
+  pointer-events:none;
+}
+
+/* TEXTO */
+
+.skill-item span,
+.pacman-item span{
+  margin-top:10px;
+
+  font-size:14px;
+
+  color:#aaa;
+
+  text-align:center;
+}
+
+/* PACMAN */
+
+#pacman{
+  position:fixed;
+
+  width:64px;
+  height:64px;
+
+  background:url("../assets/images/pacman-sprites.png");
+  background-size:256px 64px;
+
+  image-rendering:pixelated;
+
+  z-index:9999;
+
+  pointer-events:none;
+
+  animation:pacmanAnim 0.4s steps(4) infinite;
+}
+
+.pacman-used{
+  pointer-events:none;
+
+  transition:all 0.25s ease;
+
+  transform:scale(0) rotate(20deg);
+
+  opacity:0;
+}
+
+/* KNOWLEDGE */
+
+.knowledge-grid{
+  margin-top:50px;
+
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+
+  gap:16px;
+}
+
+.knowledge-card{
+  padding:18px 16px;
+
+  border-radius:16px;
+
+  background:rgba(255,255,255,0.03);
+
+  border:1px solid rgba(0,225,255,0.15);
+
+  color:white;
+
+  font-size:14px;
+  font-weight:500;
+
+  text-align:center;
+
+  min-height:80px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  backdrop-filter:blur(10px);
+
+  transition:all 0.25s ease;
+
+  box-shadow:
+    0 10px 25px rgba(0,0,0,0.25);
+
+  cursor:default;
+}
+
+.knowledge-card:hover{
+  transform:translateY(-6px) scale(1.02);
+
+  border-color:rgba(0,225,255,0.6);
+
+  background:rgba(0,225,255,0.06);
+
+  box-shadow:
+    0 15px 35px rgba(0,225,255,0.1);
+}

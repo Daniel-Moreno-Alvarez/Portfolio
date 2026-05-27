@@ -1,0 +1,42 @@
+/* =========================================================
+   RESET / GLOBAL
+========================================================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:#070707;
+  color:white;
+  font-family:'Inter', sans-serif;
+  overflow-x:hidden;
+}
+
+section{
+  scroll-margin-top:20px;
+}
+
+/* =========================================================
+   GENERAL SECTIONS
+========================================================= */
+
+.section{
+  padding:140px 10%;
+}
+
+.section-title{
+  margin-bottom:80px;
+}
+
+.section-title h2{
+  font-size:3rem;
+  margin-top:10px;
+}
+

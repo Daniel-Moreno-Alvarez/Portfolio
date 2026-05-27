@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Dev Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/navbar.css" />
+  <link rel="stylesheet" href="styles/hero.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/skills.css" />
+  <link rel="stylesheet" href="styles/portfolio.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+  <link rel="stylesheet" href="styles/responsive.css" />
+  
+  <link rel="icon" href="assets/icons/pacman.png" type="image/png">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="navbar">
+    <div class="logo">DANIEL MORENO</div>
+
+    <ul class="nav-links">
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- HERO -->
+
+  <section id="hero" class="hero">
+
+    <!-- VIDEO -->
+
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="assets/videos/Tarantula.mp4" type="video/mp4">
+    </video>
+
+    <!-- PARTICLES -->
+
+    <canvas id="particles"></canvas>
+
+    <!-- OVERLAY -->
+
+    <div class="hero-overlay"></div>
+
+    <!-- GLOW -->
+
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+
+    <!-- CONTENT -->
+
+    <div class="hero-content">
+
+      <p class="mini-title">Desarrolador de Videojuegos</p>
+
+      <h1>
+        CREADOR<br>
+        DE MUNDOS<br>
+        INTERACTIVOS
+      </h1>
+
+      <p class="hero-description">
+        Ingeniero de videojuegos centrado en sistemas de gameplay, motores gráficos y programación en C++ y C#.
+      </p>
+
+      <a href="#portfolio" class="hero-btn">
+        Ver Portfolio
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about" class="section about">
+
+    <div class="section-title">
+      <h2>Sobre mí</h2>
+    </div>
+
+    
+    <canvas id="particles"></canvas>
+
+    <div class="about-container">
+
+      <div class="about-image">
+        <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop" alt="">
+      </div>
+
+      <div class="about-text">
+        <h3>Game Developer & Creative Programmer</h3>
+
+        <p>
+          Soy estudiante de Desarrollo de Videojuegos en la UCM, con formación en programación en C++ y C#.
+        </p>
+        <p>
+          He participado en múltiples proyectos académicos utilizando motores como Unity y Unreal Engine, así como en el desarrollo de 
+          herramientas y motores propios, incluyendo un motor 3D multiplataforma y otro orientado a PC y dispositivos móviles.
+        </p>
+        <p>
+          Cuento con experiencia en el uso de tecnologías como OpenGL, SDL y PhysX, aplicadas en el contexto de proyectos universitarios.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+
+    <div class="skills-carousel">
+      <div class="skills-track">
+
+        <div class="skill-item">
+          <img src="assets/icons/unity.png" alt="Unity">
+          <span>Unity</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/unreal.png" alt="Unreal">
+          <span>Unreal</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/csharp.png" alt="C#">
+          <span>C#</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/cpp.png" alt="C++">
+          <span>C++</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/c.png" alt="C">
+          <span>C</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/javascript.png" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/html.png" alt="HTML">
+          <span>HTML</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/css.png" alt="CSS">
+          <span>CSS</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/git.png" alt="Git">
+          <span>Git</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/github.png" alt="GitHub">
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/visual.png" alt="Visual Studio">
+          <span>Visual Studio</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/android.png" alt="Android Studio">
+          <span>Android Studio</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/java.png" alt="Java">
+          <span>Java</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/Python.png" alt="Python">
+          <span>Python</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/blender.png" alt="Blender">
+          <span>Blender</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/virtualbox.png" alt="Oracle VirtualBox">
+          <span>Oracle VirtualBox</span>
+        </div>
+
+        <div class="pacman-item" id="pacman-trigger">
+          <img src="assets/icons/pacman.png">
+            
+        </div>
+
+
+
+        <!-- DUPLICADO PARA LOOP -->
+        <div class="skill-item">
+          <img src="assets/icons/unity.png" alt="Unity">
+          <span>Unity</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/unreal.png" alt="Unreal">
+          <span>Unreal</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/csharp.png" alt="C#">
+          <span>C#</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/cpp.png" alt="C++">
+          <span>C++</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/javascript.png" alt="JavaScript">
+          <span>JavaScript</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/html.png" alt="HTML">
+          <span>HTML</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/css.png" alt="CSS">
+          <span>CSS</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/git.png" alt="Git">
+          <span>Git</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/github.png" alt="GitHub">
+          <span>GitHub</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/visual.png" alt="Visual Studio">
+          <span>Visual Studio</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/android.png" alt="Android Studio">
+          <span>Android Studio</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/java.png" alt="Java">
+          <span>Java</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/Python.png" alt="Python">
+          <span>Python</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/blender.png" alt="Blender">
+          <span>Blender</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="assets/icons/virtualbox.png" alt="Oracle VirtualBox">
+          <span>Oracle VirtualBox</span>
+        </div>
+
+        <div class="pacman-item" id="pacman-trigger">
+          <img src="assets/icons/pacman.png">
+          <span> </span>
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <!-- KNOWLEDGE -->
+      <div class="knowledge-grid">
+
+        <div class="knowledge-card">
+          Programación Orientada a Objetos
+        </div>
+
+        <div class="knowledge-card">
+          Arquitectura de Motores
+        </div>
+
+        <div class="knowledge-card">
+          Gameplay Programming
+        </div>
+
+        <div class="knowledge-card">
+          Programación Asíncrona
+        </div>
+
+        <div class="knowledge-card">
+          Inteligencia Artificial
+        </div>
+
+        <div class="knowledge-card">
+          Renderizado 3D
+        </div>
+
+        <div class="knowledge-card">
+          Optimización
+        </div>
+
+        <div class="knowledge-card">
+          Sistemas de Físicas
+        </div>
+
+        <div class="knowledge-card">
+          UI / UX para videojuegos
+        </div>
+
+        <div class="knowledge-card">
+          Análisis de Datos
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PORTFOLIO -->
+
+  <section id="portfolio" class="section portfolio">
+
+    <div class="section-title">
+      <h2>Portfolio</h2>
+    </div>
+
+    <!-- PROJECT 1 -->
+
+    <div class="project right hidden">
+
+      <div class="media horizontal">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/Demo H-Engine.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="project-text">
+        <h3>H-Engine</h3>
+
+        <p>
+          Proyecto en equipo de un motor de
+          videojuegos en c++ utilizando
+          diferentes librerías como SDL, OGRE,
+          Physix, IMGUI y FMOD.
+        </p>
+        <p>
+          Mis aportaciones son principalemente
+          del diseño de la arquitectura ECS.
+        </p>
+        <p>
+          Además, desarrollamos dos minijuegos
+          en este motor:
+        </p>
+
+        <a href="https://github.com/Proyecto3-FDI-UCM/2425-Grupo02-HEngine" target="_blank">
+          Ver proyecto
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 2 -->
+
+    <div class="project left hidden">
+
+      <div class="media horizontal">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/Video de RTS.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="project-text">
+        <h3>RTS Game project</h3>
+
+        <p>
+          RTS desarrollado en Unity con
+          sistemas de construcción y varias
+          unidades jugables.
+        </p>
+        <p>
+          Su aspecto más destacado es la IA
+          enemiga, capaz de coordinar ataques
+          y gestionar la construcción de
+          forma óptima.
+        </p>
+
+        <a href="https://github.com/Daniel-Moreno-Alvarez/IAV25-MorenoAlvarez" target="_blank">
+          Ver proyecto
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 3 -->
+
+    <div class="project right hidden">
+
+      <div class="media horizontal">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/Trailer H-Defense.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="project-text">
+        <h3>H-Defense</h3>
+
+        <p>
+          Juego de tipo “tower defense”
+          creado from scratch usando la
+          librería SDL. 
+
+        </p>
+        <p>
+          El proyecto incorpora un tilemap
+          isométrico, junto con la gestión de
+          enemigos y torres constribles. 
+        </p>
+        <p>
+          Todo el sistema está organizado
+          mediante una arquitectura ECS.
+        </p>
+
+        <a href="https://github.com/Daniel-Moreno-Alvarez/NineandoCorp" target="_blank">
+          Ver proyecto
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 4 -->
+
+    <div class="project left hidden">
+
+      <div class="media vertical">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/Grabacion Realidad Aumentada.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="project-text">
+        <h3>House Stack</h3>
+
+        <p>
+          Pequeño proyecto en
+          Unity que utiliza los
+          principales paquetes
+          de realidad aumentada
+          mediante Vuforia.
+        </p>
+
+        <a href="https://github.com/Daniel-Moreno-Alvarez/ProyectoRA" target="_blank">
+          Ver proyecto
+        </a>
+      </div>
+
+    </div>
+
+    <!-- PROJECT 5 -->
+
+    <div class="project right hidden">
+
+      <div class="media horizontal">
+        <video autoplay muted loop playsinline>
+          <source src="assets/videos/Grabacion Introito.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="project-text">
+        <h3>Introito Antiapotropaico</h3>
+
+        <p>
+          Videojuego para navegador construido
+          con JavaScript, HTML5 y CSS,
+          aprovechando el framework Phaser para
+          gestionar escenas, físicas y
+          animaciones.
+        </p>
+
+        <a href="https://nievesag.github.io/SopaDeEscalofrios/" target="_blank">
+          Ver proyecto
+        </a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+
+  <section id="contact" class="section contact">
+
+    <div class="section-title">
+      <h2>Contacto</h2>
+    </div>
+
+    <div class="contact-container">
+
+      <p>
+        ¿Quieres colaborar o trabajar conmigo?
+      </p>
+
+      <a href="mailto:morenoalvarezdaniel33@gmail.com">
+        morenoalvarezdaniel33@gmail.com
+      </a>
+
+    </div>
+
+  </section>
+
+  <script src="scripts/reveal.js"></script>
+  <script src="scripts/hero.js"></script>
+  <script src="scripts/particles.js"></script>
+  <script src="scripts/carousel.js"></script>
+  <script src="scripts/pacman.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px){
+
+  section{
+    scroll-margin-top:20px;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    padding:20px 5%;
+
+    flex-direction:column;
+
+    gap:20px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:15px;
+  }
+
+  .nav-links a{
+    font-size:0.9rem;
+  }
+
+  /* HERO */
+
+  .hero{
+    padding:0 7%;
+
+    text-align:center;
+
+    justify-content:center;
+  }
+
+  .hero-content{
+    max-width:100%;
+  }
+
+  .hero h1{
+    font-size:3rem;
+    line-height:1;
+  }
+
+  .hero-description{
+    font-size:1rem;
+  }
+
+  .hero-btn{
+    padding:15px 30px;
+    font-size:0.95rem;
+  }
+
+  /* GLOW */
+
+  .hero-glow{
+    opacity:0.15;
+    filter:blur(80px);
+  }
+
+  /* SECTIONS */
+
+  .section{
+    padding:100px 7%;
+  }
+
+  .section-title h2{
+    font-size:2.2rem;
+  }
+
+  /* ABOUT */
+
+  .about-container{
+    flex-direction:column;
+    gap:40px;
+  }
+
+  .about-image img{
+    width:100%;
+  }
+
+  /* PROJECTS */
+
+  .project,
+  .project.left{
+    flex-direction:column !important;
+
+    margin:120px 0;
+
+    transform:none !important;
+  }
+
+  .project video,
+  .project-text{
+    width:100%;
+  }
+
+  .media.horizontal,
+  .media.vertical{
+    width:100%;
+  }
+
+  .project-text{
+    text-align:center !important;
+  }
+
+  .project-text h3{
+    font-size:2.2rem;
+  }
+
+  /* CONTACT */
+
+  .contact-container a{
+    font-size:1.3rem;
+
+    word-break:break-word;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .skills-carousel::before,
+  .skills-carousel::after{
+    width:80px;
+  }
+
+}
