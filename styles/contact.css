@@ -11,8 +11,68 @@
   margin-bottom:30px;
 }
 
-.contact-container a{
-  color:#00e0ff;
+.contact-container{
+  width:min(850px, 90%);
+  margin:120px auto;
+  text-align:center;
+  color:#bbb;
+  line-height:2;
+  font-size:18px;
+}
+
+.contact-container p{
+  margin-bottom:40px;
+}
+
+.contact-buttons{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+
+  width:60%;
+  margin:0 auto;
+}
+
+/* BOTÓN */
+.contact-btn{
+  flex:1; /* clave: reparte el espacio */
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  padding:18px 0;
+
+  background:#00e0ff;
+  color:#0a0a0a;
+
   text-decoration:none;
-  font-size:2rem;
+
+  border-radius:40px;
+
+  font-weight:600;
+
+  transition:all 0.25s ease;
+
+  position:relative;
+  overflow:hidden;
+}
+
+/* ICONO */
+.contact-btn img{
+  width:22px;
+  height:22px;
+  scale:1.5;
+}
+
+/* HOVER */
+.contact-btn:hover{
+  transform:translateY(-5px) scale(1.03);
+
+  box-shadow:
+    0 0 25px rgba(0,224,255,0.6),
+    0 0 60px rgba(0,224,255,0.25),
+    0 10px 30px rgba(0,0,0,0.3);
+
+  filter:brightness(1.1);
 }

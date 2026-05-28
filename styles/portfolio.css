@@ -20,6 +20,24 @@
     transform 1s ease;
 }
 
+.portfolio-intro{
+
+  width:min(850px, 90%);
+  margin:120px auto 80px;
+
+  text-align:center;
+
+  color:#bbb;
+
+  line-height:2;
+
+  font-size:18px;
+}
+
+.portfolio-intro p + p{
+  margin-top:25px;
+}
+
 /* DIRECCIONES */
 
 .project.left{

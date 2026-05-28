@@ -28,7 +28,7 @@ section{
 ========================================================= */
 
 .section{
-  padding:140px 10%;
+  padding:100px 10%;
 }
 
 .section-title{
@@ -38,5 +38,28 @@ section{
 .section-title h2{
   font-size:3rem;
   margin-top:10px;
+
+  color:#fff;
+
+  position:relative;
+}
+
+.section-title h2::after{
+  content:"";
+  display:block;
+
+  width:800px;
+  height:2px;
+
+  margin:40px auto 0;
+
+  background:linear-gradient(
+    to right,
+    transparent,
+    #00e0ff,
+    transparent
+  );
+
+  box-shadow:0 0 15px rgba(0,224,255,0.4);
 }
 
