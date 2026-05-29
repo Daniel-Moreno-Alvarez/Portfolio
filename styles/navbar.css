@@ -2,42 +2,101 @@
    NAVBAR
 ========================================================= */
 
-.navbar{
-  position:fixed;
-  top:0;
-  width:100%;
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
 
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-  padding:25px 8%;
+  padding: 22px 8%;
 
-  background:rgba(0,0,0,0.5);
-  backdrop-filter:blur(10px);
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(14px);
 
-  z-index:1000;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+
+  z-index: 1000;
+
+  transition: all 0.3s ease;
 }
 
-.logo{
-  font-family:'Orbitron', sans-serif;
-  font-size:1.5rem;
-  font-weight:700;
-  color:#00e0ff;
+/* efecto sutil al hacer scroll (opcional si luego lo añades con JS) */
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(0, 225, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.nav-links{
-  display:flex;
-  gap:40px;
-  list-style:none;
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  color: #00e0ff;
+
+  letter-spacing: 1px;
+
+  text-shadow: 0 0 15px rgba(0, 224, 255, 0.25);
+
+  transition: 0.3s ease;
 }
 
-.nav-links a{
-  color:white;
-  text-decoration:none;
-  transition:0.3s;
+.logo:hover {
+  transform: scale(1.05);
+  text-shadow: 0 0 25px rgba(0, 224, 255, 0.4);
 }
 
-.nav-links a:hover{
-  color:#00e0ff;
+.nav-links {
+  display: flex;
+  gap: 35px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  position: relative;
+
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: all 0.3s ease;
+  padding: 6px 0;
+}
+
+/* underline animado */
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+
+  width: 0%;
+  height: 2px;
+
+  background: #00e0ff;
+
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 224, 255, 0.5);
+}
+
+.nav-links a:hover {
+  color: #00e0ff;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* link activo (si lo quieres usar con JS o manual) */
+.nav-links a.active {
+  color: #00e0ff;
+}
+
+.nav-links a.active::after {
+  width: 100%;
 }
