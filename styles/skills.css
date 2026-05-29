@@ -113,6 +113,10 @@
   pointer-events:none;
 }
 
+.skill-item.bigger img{
+  transform: scale(1.5);
+}
+
 /* TEXTO */
 
 .skill-item span,

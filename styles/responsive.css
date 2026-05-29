@@ -2,7 +2,7 @@
    RESPONSIVE
 ========================================================= */
 
-@media(max-width:900px){
+@media(max-width:1000px){
 
   section{
     scroll-margin-top:20px;
@@ -77,13 +77,16 @@
 
   /* ABOUT */
 
-  .about-container{
-    flex-direction:column;
-    gap:40px;
+  .about-container {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
   }
 
-  .about-image img{
-    width:100%;
+  .about-image img {
+    width: 100%;
+    max-width: 320px;
+    height: 420px; /* 👈 clave: reduce altura en móvil */
   }
 
   /* PROJECTS */
@@ -126,7 +129,7 @@
 }
 
 @media(max-width:768px){
-
+  
   .skills-carousel::before,
   .skills-carousel::after{
     width:80px;
